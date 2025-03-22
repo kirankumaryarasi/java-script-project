@@ -1,0 +1,76 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="timer">Time left: <span id="time">60</span> seconds</div>
+        <h1>Quiz Application</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question-container">
+                <h4>1] What is the capital of France?</h4>
+                <ul>
+                    <li><input type="radio" name="question1" value="Berlin"> Berlin</li>
+                    <li><input type="radio" name="question1" value="Madrid"> Madrid</li>
+                    <li><input type="radio" name="question1" value="Paris"> Paris</li>
+                    <li><input type="radio" name="question1" value="Rome"> Rome</li>
+                </ul>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-container">
+                <h4>2] Which language is used for web development?</h4>
+                <ul>
+                    <li><input type="radio" name="question2" value="Java"> Java</li>
+                    <li><input type="radio" name="question2" value="C"> C</li>
+                    <li><input type="radio" name="question2" value="Python"> Python</li>
+                    <li><input type="radio" name="question2" value="JavaScript"> JavaScript</li>
+                </ul>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-container">
+                <h4>3] What does CSS stand for?</h4>
+                <ul>
+                    <li><input type="radio" name="question3" value="Cascading Style Sheets"> Cascading Style Sheets</li>
+                    <li><input type="radio" name="question3" value="Colorful Style Sheets"> Colorful Style Sheets</li>
+                    <li><input type="radio" name="question3" value="Computer Style Sheets"> Computer Style Sheets</li>
+                    <li><input type="radio" name="question3" value="Creative Style Sheets"> Creative Style Sheets</li>
+                </ul>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-container">
+                <h4>4] Which HTML tag is used to define an unordered list?</h4>
+                <ul>
+                    <li><input type="radio" name="question4" value="ul"> &lt;ul&gt;</li>
+                    <li><input type="radio" name="question4" value="li"> &lt;li&gt;</li>
+                    <li><input type="radio" name="question4" value="ol"> &lt;ol&gt;</li>
+                    <li><input type="radio" name="question4" value="list"> &lt;list&gt;</li>
+                </ul>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-container">
+                <h4>5] What year was JavaScript created?</h4>
+                <ul>
+                    <li><input type="radio" name="question5" value="1993"> 1993</li>
+                    <li><input type="radio" name="question5" value="1995"> 1995</li>
+                    <li><input type="radio" name="question5" value="1996"> 1996</li>
+                    <li><input type="radio" name="question5" value="1997"> 1997</li>
+                </ul>
+            </div>
+
+            <button type="button" id="submit-btn" onclick="submitQuiz()">Submit</button>
+        </form>
+        <p id="score"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
